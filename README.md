@@ -6,21 +6,23 @@ A reading list on **recursive self-improvement (RSI)** and closely related self-
 
 ## Contents
 
-- [Surveys and Roadmaps](#surveys-and-roadmaps)
-- [Bounded Self-Refinement and Experience](#bounded-self-refinement-and-experience)
-- [Self-Training and Self-Generated Feedback](#self-training-and-self-generated-feedback)
-- [Self-Play and Automated Curricula](#self-play-and-automated-curricula)
-- [Agent Design and Recursive Code Improvement](#agent-design-and-recursive-code-improvement)
-- [Automated Research and Algorithm Discovery](#automated-research-and-algorithm-discovery)
-- [Evaluation and Safety](#evaluation-and-safety)
-- [Repositories and Resources](#repositories-and-resources)
+- [Surveys and Roadmaps](#rsi-surveys)
+- [Bounded Self-Refinement and Experience](#rsi-bounded-refinement)
+- [Self-Training and Self-Generated Feedback](#rsi-self-training)
+- [Self-Play and Automated Curricula](#rsi-self-play)
+- [Agent Design and Recursive Code Improvement](#rsi-agent-improvement)
+- [Automated Research and Algorithm Discovery](#rsi-automated-research)
+- [Evaluation and Safety](#rsi-evaluation-safety)
+- [Repositories and Resources](#rsi-resources)
 
+<a id="rsi-surveys"></a>
 ## 📚 Surveys and Roadmaps
 
 An overview for understanding the RSI landscape.
 
 - [Self-Evolving AI Agents Survey](https://arxiv.org/abs/2508.07407)<sup>†</sup> - Organizes self-evolving agents around system inputs, agent systems, environments, and optimizers, with dedicated coverage of evaluation and safety.
 
+<a id="rsi-bounded-refinement"></a>
 ## 🔁 Bounded Self-Refinement and Experience
 
 Systems that improve behavior through inference-time feedback or persistent experience without changing the base model's weights.
@@ -29,6 +31,7 @@ Systems that improve behavior through inference-time feedback or persistent expe
 - [Reflexion](https://arxiv.org/abs/2303.11366) - Converts task feedback into verbal reflections stored in episodic memory to improve an agent's later attempts.
 - [Voyager](https://arxiv.org/abs/2305.16291) - Combines an automatic curriculum, a growing executable skill library, and environment-grounded iterative prompting for lifelong embodied learning.
 
+<a id="rsi-self-training"></a>
 ## 🧠 Self-Training and Self-Generated Feedback
 
 Methods that turn model-generated reasoning, instructions, rewards, prompts, or update directives into lasting capability changes.
@@ -41,6 +44,7 @@ Methods that turn model-generated reasoning, instructions, rewards, prompts, or 
 - [Co-RL](https://arxiv.org/abs/2608.17253)<sup>†</sup> - Uses rewards from diverse, parameter-decoupled peer models to learn reasoning without labels while reducing correlated-error collapse.
 - [RecurSE](https://arxiv.org/abs/2608.24231)<sup>†</sup> - Co-evolves a trainable rubric judge and synchronized policy-copy checker while monitoring reward validity to stop bounded self-improvement before it degrades.
 
+<a id="rsi-self-play"></a>
 ## 🎮 Self-Play and Automated Curricula
 
 Systems that generate problems near the learner's frontier and use solving progress as the improvement signal.
@@ -50,6 +54,7 @@ Systems that generate problems near the learner's frontier and use solving progr
 - [SOAR](https://arxiv.org/abs/2601.18778)<sup>†</sup> - Uses asymmetric self-play and bilevel meta-RL to reward a teacher for producing stepping-stone problems that improve a student on initially unsolved tasks.
 - [J-Zero](https://arxiv.org/abs/2608.26582)<sup>†</sup> - Co-evolves Challenger, Solver, and Judge models from zero data, using production-derived preference orderings to adapt evaluation even in unverifiable domains.
 
+<a id="rsi-agent-improvement"></a>
 ## 🛠️ Agent Design and Recursive Code Improvement
 
 Systems that optimize prompts, workflows, scaffolds, agent logic, evaluators, or the implementation responsible for future improvements.
@@ -60,6 +65,7 @@ Systems that optimize prompts, workflows, scaffolds, agent logic, evaluators, or
 - [Darwin Gödel Machine (DGM)](https://arxiv.org/abs/2505.22954) - Evolves a branching archive of coding agents that modify their own code and empirically validate improvements on coding benchmarks.
 - [Red Queen Gödel Machine (RQGM)](https://arxiv.org/abs/2606.26294)<sup>†</sup> - Co-evolves agents and evaluators under controlled non-stationary utilities, extending self-improvement beyond fixed benchmarks.
 
+<a id="rsi-automated-research"></a>
 ## 🔬 Automated Research and Algorithm Discovery
 
 Systems that close larger portions of the research loop and can contribute improvements to AI or its computational substrate.
@@ -67,6 +73,7 @@ Systems that close larger portions of the research loop and can contribute impro
 - [The AI Scientist](https://arxiv.org/abs/2408.06292) - Automates idea generation, implementation, experimentation, paper writing, and simulated review in an iterative scientific discovery loop.
 - [AlphaEvolve](https://arxiv.org/abs/2506.13131) - Combines LLM-generated code, automated evaluators, and evolutionary search to discover and optimize algorithms, including components used in AI training.
 
+<a id="rsi-evaluation-safety"></a>
 ## 🛡️ Evaluation and Safety
 
 Work on measuring AI R&D capability and understanding failure modes that become especially important inside self-improvement loops.
@@ -76,6 +83,7 @@ Work on measuring AI R&D capability and understanding failure modes that become 
 - [Self-Improving Agent Fragility](https://arxiv.org/abs/2608.18066)<sup>†</sup> - Shows that memory-based improvement can amplify evaluation variance and task-order effects, motivating multi-run and shuffled-order stress tests.
 - [AI4AI-Bench](https://arxiv.org/abs/2608.20318)<sup>†</sup> - Tests whether agents can rewrite training algorithms across ten frozen research repositories under fixed hidden evaluators and controlled compute.
 
+<a id="rsi-resources"></a>
 ## 🗂️ Repositories and Resources
 
 Living literature maps, implementations, and evaluation environments useful for following or reproducing the field.
